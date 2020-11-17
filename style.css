@@ -35,7 +35,7 @@ body{
 }
 .profile{
     grid-area: profile;
-    padding: 0.2rem 1rem 2rem 1rem;
+    margin: 0.2rem 1rem 2rem 1rem;
 }
 .picture-div{
     display: flex;
@@ -66,9 +66,13 @@ body{
 }
 .set-status input{
     height: 1.9rem;
-    width: 21.3125rem;
+    width: 20.825rem;
     border: 0.1rem solid #E1E4E8;
     border-radius: 0.3rem;
+    padding-left: 0.5rem;
+}
+.set-status input:focus{
+    outline: none;
 }
 .set-status input::placeholder{
     padding-left: 1.7rem;
@@ -95,6 +99,9 @@ body{
     background-color: #edeff2;
     color:#24292E;
 }
+.edit button:focus{
+    outline:none;
+}
 .interactions{
     display: flex;
     color: #24292E;
@@ -119,18 +126,33 @@ body{
 }
 .repository-nav a{
     margin: 0 0.5rem 0 1.5rem;
-    padding:0  1rem 1.5rem 0;
+    padding:0  1rem 1rem 0;
     color: #24292E;
     text-decoration: none;
     font-size: 0.9rem;
 }
-.repository-nav a:focus{
-    border-bottom: 0.3rem solid  #EE806B;
-}
+/* .repository-nav a:active{
+    animation-name: link_line;
+    animation-duration: 10s;
+} */
 .line{
     background-color: #D1D5DA;
     height: 0.01rem;
     border:none;
+}
+.repository-search{
+    margin: 1.2rem 1rem 2rem 1rem;
+}
+.repository-search input{
+    height: 1.9rem;
+    width: 20.825rem;
+    font-size:0.9rem;
+    border: 0.1rem solid #E1E4E8;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+}
+.repository-search input:focus{
+    outline: none;
 }
 .repository{
     grid-area: repository;
